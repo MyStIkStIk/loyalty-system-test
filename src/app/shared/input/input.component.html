@@ -1,0 +1,7 @@
+<ng-container *ngIf="el !== undefined">
+    <mat-form-field class="form-group">
+        <mat-label>{{el.text}}</mat-label>
+        <input matInput [type]="el.type" 
+        [class.number]="el.type == 'number'">
+    </mat-form-field>
+</ng-container>

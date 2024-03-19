@@ -1,0 +1,8 @@
+<ng-container *ngIf="schema !== null">
+    <div [ngClass]="schema.name" class="schema-container" [style.background-color]="schema.color">
+        <h3>{{schema.text}}</h3>
+        <ng-container *ngFor="let el of schema.elements">
+            <custom-input [el]="el"></custom-input>
+        </ng-container>
+    </div>
+</ng-container>
